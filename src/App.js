@@ -1,26 +1,33 @@
+/* eslint-disable jsx-a11y/label-has-for */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/tailwind.css';
+import Card from './Card';
+import Footer from './Footer';
+import Header from './Header';
+import Login from './Login';
+import Navbar from './Navbar';
+import SpacedColumns from './SpacedColumns';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <div className="container mx-auto px-4">
+    <div className="">
+      <Navbar />
+      <Header />
+      <div className="flex mb-4">
+        <div className="w-1/2">
+          <Login />
+        </div>
+        <div className="w-1/2">
+          <Card />
+        </div>
+      </div>
+      <SpacedColumns />
     </div>
-  );
-}
+    <div className=" py-10">
+      <Footer />
+    </div>
+  </div>
+);
 
 export default App;
