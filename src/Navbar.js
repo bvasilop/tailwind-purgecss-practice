@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Navbar = () => (
-  <div>
+  <nav>
     <ul className="flex">
       <li className="mr-3">
         <a
@@ -29,7 +29,7 @@ const Navbar = () => (
         </a>
       </li>
     </ul>
-  </div>
+  </nav>
 );
 
 export default Navbar;
