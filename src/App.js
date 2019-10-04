@@ -6,7 +6,7 @@ import Card from './Card';
 import Footer from './Footer';
 import FormGrid from './FormGrid';
 import Header from './Header';
-import Login from './Login';
+// import Login from './Login';
 import Navbar from './Navbar';
 import SpacedColumns from './SpacedColumns';
 import MarketingPage from './MarketingPage';
@@ -16,34 +16,33 @@ const App = () => (
     <div className="">
       <Navbar />
       <Header />
-      <div className="flex mb-4">
-        <div className="w-1/3">
+      <div className="flex justify-between">
+        <div className="p">
           <Card />
         </div>
-        <div className="w-1/3">
+        <div className="flex justify-between">
           <Card />
         </div>
-        <div className="w-1/3">
+        <div className="flex justify-between">
           <Card />
         </div>
       </div>
 
       <div className="flex mb-4">
-        <div className="w-1/2">
+        <div className="">
           <MarketingPage />
         </div>
-        <div className="w-1/2">
+        <div className="">
           <MarketingPage />
         </div>
       </div>
-      <div className="flex mb-4">
-        <div className="w-1/2">
-          <Login />
-        </div>
-        <div className="w-1/2">
-          <FormGrid />
-        </div>
+
+      <div className="flex justify-center">
+        <FormGrid />
       </div>
+      {/* <div className="flex justify-center">
+        <Login />
+      </div> */}
       <SpacedColumns />
     </div>
     <div className=" py-10">
