@@ -10,39 +10,42 @@ import Header from './Header';
 import Navbar from './Navbar';
 import SpacedColumns from './SpacedColumns';
 import MarketingPage from './MarketingPage';
+import ProfileCard from './ProfileCard';
+import WeatherCard from './WeatherCard';
 
 const App = () => (
   <div className="container mx-auto px-4">
-    <div className="">
-      <Navbar />
-      <Header />
-      <div className="flex justify-between">
-        <div className="p">
-          <Card />
-        </div>
-        <div className="flex justify-between">
-          <Card />
-        </div>
-        <div className="flex justify-between">
-          <Card />
-        </div>
-      </div>
+    <Navbar />
+    <Header />
+    <WeatherCard />
+    <div className="flex justify-between">
+      <Card />
+      <Card />
+      <Card />
+    </div>
 
-      <div className="flex mb-4">
-        <div className="">
-          <MarketingPage />
-        </div>
-        <div className="">
-          <MarketingPage />
-        </div>
-      </div>
+    <div className="flex justify-between">
+      <ProfileCard />
+      <ProfileCard />
+      <ProfileCard />
+    </div>
 
-      <div className="flex justify-center">
-        <FormGrid />
+    <div className="flex flex justify-between mb-4">
+      <div className="px-4">
+        <MarketingPage />
       </div>
-      {/* <div className="flex justify-center">
+      <div className="">
+        <MarketingPage />
+      </div>
+    </div>
+
+    {/* <div className="flex justify-center">
+      <FormGrid />
+    </div> */}
+    {/* <div className="flex justify-center">
         <Login />
       </div> */}
+    <div>
       <SpacedColumns />
     </div>
     <div className=" py-10">
